@@ -11,6 +11,7 @@ import {Routes,Route} from 'react-router-dom'
 import React from 'react'
 import Details from './Component/Details';
 import DetailPage from './Pages/DetailPage';
+import Menuicon from './Pages/Menuicon';
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
     <Details>
       <Header/>
       <Nav/>
+      <Menuicon/>
+
       <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/Bollywood' element={<Bollywood/>}/>
@@ -28,6 +31,7 @@ function App() {
             <Route path='/food' element={<Food/>}/>
             <Route path='/DetailPage' element={<DetailPage/>}/>
         </Routes>
+        
         </Details>
     </>
   )

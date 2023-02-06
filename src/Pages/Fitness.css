@@ -5,7 +5,7 @@
     height: 500px;
 }
 .main {
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
     flex: 2;
