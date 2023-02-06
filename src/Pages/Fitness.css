@@ -1,0 +1,90 @@
+.fitnessBlog{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    height: 500px;
+}
+.main {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin-top: 50px;
+  }
+.top{
+/* background: yellow; */
+    height:100px;
+     display:flex;
+     flex-flow:row;
+}
+.right {
+    flex:1;
+    margin-top: 30px;
+    background-color: green;
+  }
+
+.adv{
+    width: 300px;
+    height: 500px;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 20px;
+}  
+#fitImg1{
+    width: 300px;
+    height: 200px;
+    margin-left: 30px;
+}
+#fitImg2{
+    width: 200px;
+    height: 100px;
+    margin-left: 30px;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.top1{
+    height: 250px;
+    margin-top: 20px;
+}
+.top2{
+    height: 150px;
+}
+h2{
+    margin-left: 20px;
+    font-size: 29px;
+    color: chocolate;
+    margin-bottom: 10px;
+}
+span{
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+h5,h4{
+    margin-left: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+@media screen and (max-width:650px)and (min-width:466px) {
+.fitnessBlog{
+    flex-direction: column;
+}
+
+  }
+@media screen and (max-width:466px)and (min-width:300px) {
+.fitnessBlog{
+    flex-direction: column;
+}
+#fitImg1{
+    width: 200px;
+}
+p{
+    font-size: 14px;
+}
+  }

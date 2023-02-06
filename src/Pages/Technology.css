@@ -1,0 +1,10 @@
+.techflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    /* background-color: blue; */
+    height:119px;
+    width: 277px;
+    margin: auto;
+}
