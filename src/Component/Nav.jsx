@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 const Nav = () => {
   return (
     <div className='nav'>
-      <ul>
+      <ul style={{listStyle: 'none'}}>
         <h4><li><Link to ='/'>Home</Link></li></h4>
         <h4><li><Link to ='/Bollywood'>Bollywood</Link></li></h4>
         <h4><li><Link to ='/tech'>Technology</Link></li></h4>

@@ -109,7 +109,7 @@
 import React, { useContext } from 'react'
 import './Home.css'
 import '../App.css'
-import ImageCard from './ImageCard'
+// import ImageCard from './ImageCard'
 import CardHome from './CardHome'
 import Card from './Card'
 import { store } from '../Component/Details'
@@ -117,12 +117,20 @@ import { store } from '../Component/Details'
 import './Fitness.css'
 import './Card.css'
 import Cardshort from './Cardshort'
+import Menuicon from './Menuicon'
+import Nav from '../Component/Nav'
 
 const Home = () => {
   const [data] = useContext(store)
   console.log(data)
   return (
     <>
+    <div className="homeNav">
+      <Nav/>
+    </div>
+     <div className="homeMenu">
+     <Menuicon/>
+     </div>
       <div className='Home'>
 {/* 
         <div className='home-image'>
@@ -253,9 +261,9 @@ const Home = () => {
 
 
 
-        <h1 style={{ marginTop: "40px", display: "inline-block" }}>
+        {/* <h2 style={{ marginTop: "40px", display: "inline-block" }}>
           Latest Stories
-        </h1>
+        </h2>
         <hr />
         <div className="homeLatest1">
         <div className="home__left">
@@ -309,7 +317,7 @@ const Home = () => {
               />
             ))}
         </div>
-      </div>
+      </div> */}
       </div>
 
 

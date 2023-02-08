@@ -3,16 +3,20 @@ import {store} from '../Component/Details';
 import Card from './Card';
 import Cardshort from './Cardshort';
 import './Card.css'
+import Nav from '../Component/Nav';
+import Menuicon from './Menuicon';
 const Food = () => {
   const [data]=useContext(store)
     console.log(data);
   return (
     <div>
+      <Nav/>
+      <Menuicon/>
     <div className='fitnessFlex'>
       <div className="fitnessLeft">
         <br /> <br />
     <h2 className='Fitness-heading' style={{textDecoration:'underline',textDecorationColor:'blue',marginLeft:'50px',fontSize:'29px'}}>Hollywood</h2>
-        {data.filter((article)=>{return article.category=="Food" }).map((n,index)=>(
+        {data.filter((article)=>{return article.category==="Food" }).map((n,index)=>(
           <Card
           imgUrl={n.img}
           title={n.title}
@@ -24,7 +28,7 @@ const Food = () => {
       <div className="fitnessRight">
         <br /> <br /> <br />
       <h2 className='Fitness-heading'><span style={{textDecoration:'underline',textDecorationColor:'blue'}}>Top</span> Post</h2>
-      {data.filter((article)=>{return article.category=="Food" }).map((m,index)=>(
+      {data.filter((article)=>{return article.category==="Food" }).map((m,index)=>(
           <Cardshort
           imgUrl1={m.img}
           title1={m.title}

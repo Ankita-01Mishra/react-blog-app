@@ -3,11 +3,15 @@ import {store} from '../Component/Details';
 import Card from './Card';
 import Cardshort from './Cardshort';
 import './Card.css'
+import Nav from '../Component/Nav';
+import Menuicon from './Menuicon';
 const Technology = () => {
   const [data]=useContext(store)
     console.log(data);
   return (
     <div>
+       <Nav/>
+      <Menuicon/>
     <div className='fitnessFlex'>
       <div className="fitnessLeft">
         <br /> <br />

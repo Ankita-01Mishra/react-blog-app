@@ -19,8 +19,8 @@ function App() {
     <>
     <Details>
       <Header/>
-      <Nav/>
-      <Menuicon/>
+      {/* <Nav/> */}
+      {/* <Menuicon/> */}
 
       <Routes>
             <Route path='/' element={<Home/>}/>

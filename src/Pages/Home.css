@@ -224,12 +224,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 }
 .homeLatest1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    flex-flow: row;
+   flex-flow: row;
 }
 
 .homeFlex{
@@ -284,4 +285,10 @@
         margin-bottom: 500px;
         flex-direction: column;
     }
+    .homeNav{
+        margin-left: 279px;
+    }
+    .homeLatest1{
+        flex-direction: column;
+      }
 }
